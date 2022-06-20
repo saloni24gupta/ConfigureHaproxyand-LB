@@ -1,0 +1,9 @@
+Steps to do HTTP Authentication
+step1:  package httpd install
+step2:  copy webpage: /var/www/html 
+step3: configure auth /var/www/html and replace allowoverride authconfig
+step4: create a file .htaccess at /var/www/html
+step5: install python pip3
+step6: install python lin pip: passlib
+step7: create a user and its password inside /var/www. with name .passwd
+step6: restart the httpd service 
