@@ -1,3 +1,4 @@
+Configure httpd Authentication
 Steps to do HTTP Authentication
 step1:  package httpd install
 step2:  copy webpage: /var/www/html 
