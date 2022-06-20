@@ -6,3 +6,6 @@
      - service:
          name: "httpd"
          state: started
+     - copy:
+          dest: "/var/www/html/index.html"
+          content: "My First Ansible Task to configure webpage" 
