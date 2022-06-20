@@ -1,5 +1,5 @@
 # tasks file for mylb
-- host: all
+- hosts: all
   tasks:
      - name: "Installing HaProxy"
        package:
