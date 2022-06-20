@@ -1,0 +1,17 @@
+# tasks file for mylb
+- host: all
+  tasks:
+     - name: "Installing HaProxy"
+       package:
+          name: "haproxy"
+          state: present
+
+     - name: "Copy haproxy conf file"
+       template:
+          src: "/etc/haproxy/haproxy.cfg"
+          dest: "/etc/haproxy"
+  
+     - name: "Start HaProxy Servcice"
+       service:
+          name: "haproxy"
+          state: started
