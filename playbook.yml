@@ -8,4 +8,8 @@
          state: started
      - copy:
           dest: "/var/www/html/index.html"
-          content: "My First Ansible Task to configure webpage" 
+          content: "My First Ansible Task to configure webpage"
+     - name: "Update content in index.html"
+       lineinfile:
+         path: "/var/www/html/index.html"
+         line: "Welcome to line 2 this is edited by lineinfile module" 
